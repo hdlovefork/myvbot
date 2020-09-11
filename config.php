@@ -1,6 +1,6 @@
 <?php
 
-$path = __DIR__.'/./../tmp/';
+$path = __DIR__.'/tmp/';
 
 return [
     'path'     => $path,
@@ -8,8 +8,8 @@ return [
      * swoole 配置项（执行主动发消息命令必须要开启）
      */
     'swoole'  => [
-        'status' => false,
-        'ip'     => '127.0.0.1',
+        'status' => true,
+        'ip'     => '0.0.0.0',
         'port'   => '8866',
     ],
     /*

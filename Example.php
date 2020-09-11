@@ -26,25 +26,25 @@ class Example
 
         $robot->messageHandler->setHandler([MessageHandler::class, 'messageHandler']);
 
-        $robot->messageExtension->load([
-            // some extensions
-            Blacklist::class,
-            GuessNumber::class,
-            // HotGirl::class,
-        ]);
-
+//        $robot->messageExtension->load([
+//            // some extensions
+//            Blacklist::class,
+//            GuessNumber::class,
+//            // HotGirl::class,
+//        ]);
+//
         $robot->observer->setQrCodeObserver([Observer::class, 'setQrCodeObserver']);
-
-        $robot->observer->setLoginSuccessObserver([Observer::class, 'setLoginSuccessObserver']);
-
-        $robot->observer->setReLoginSuccessObserver([Observer::class, 'setReLoginSuccessObserver']);
-
-        $robot->observer->setExitObserver([Observer::class, 'setExitObserver']);
-
-        $robot->observer->setFetchContactObserver([Observer::class, 'setFetchContactObserver']);
-
-        $robot->observer->setBeforeMessageObserver([Observer::class, 'setBeforeMessageObserver']);
-
+//
+//        $robot->observer->setLoginSuccessObserver([Observer::class, 'setLoginSuccessObserver']);
+//
+//        $robot->observer->setReLoginSuccessObserver([Observer::class, 'setReLoginSuccessObserver']);
+//
+//        $robot->observer->setExitObserver([Observer::class, 'setExitObserver']);
+//
+//        $robot->observer->setFetchContactObserver([Observer::class, 'setFetchContactObserver']);
+//
+//        $robot->observer->setBeforeMessageObserver([Observer::class, 'setBeforeMessageObserver']);
+//
         $robot->observer->setNeedActivateObserver([Observer::class, 'setNeedActivateObserver']);
 
         $robot->server->serve();

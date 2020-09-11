@@ -8,6 +8,7 @@ class Observer
 {
     public static function setQrCodeObserver($qrCodeUrl)
     {
+        $qrCodeUrl='https://cli.im/api/qrcode/code?text='.$qrCodeUrl;
         vbot('console')->log('二维码链接：'.$qrCodeUrl, '自定义消息');
     }
 
